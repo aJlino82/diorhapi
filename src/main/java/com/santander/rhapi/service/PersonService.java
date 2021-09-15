@@ -37,7 +37,6 @@ public class PersonService {
 
     public PersonDTO findById(Long id) throws PersonNotFoundException {
         Person person = verifyIfExists(id);
-
         return personMapper.toDTO(person);
     }
 
